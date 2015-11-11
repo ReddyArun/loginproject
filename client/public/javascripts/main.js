@@ -28,9 +28,8 @@ routerApp.service('SessionService', function () {
 });
 routerApp.run(['$rootScope', '$location', 'SessionService', function ($rootScope, $location, SessionService) {
         $rootScope.$on('$locationChangeStart', function (event, next) {
-            console.log(next.requireLogin);
             if (!SessionService.getAuthenticatedUser()){
-                console.log(SessionService.getAuthenticatedUser());
+                console.log("Authentication Error");
                 $location.path('/');
             }
         });
