@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row vertical-offset-50">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Sign in</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="form-control-static" ng-if="errorMsg">{{errorMsg}}</p>
+                    <form>
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="User Name" value="arun" ng-model="loginData.username" type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="Password" value="arun" ng-model="loginData.password" type="password" required>
+                            </div>
+                            <div>
+                                <label>
+                                    <br>
+                                </label>
+                            </div>
+                            <input class="btn btn-lg btn-success btn-block" type="submit" value="Login" ng-click="loginUser()">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

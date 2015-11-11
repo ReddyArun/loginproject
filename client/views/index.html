@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="nodeTodo">
+    <head>
+        <title>SBPUC</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- styles -->
+        <link href="styleframework/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="stylesheets/style.css" rel="stylesheet" media="screen">
+        <!-- frame work scripts -->
+        <script src="jsframework/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="jsframework/bootstrap.min.js" type="text/javascript"></script>
+        <script src="jsframework/angular.min.js"></script>
+        <script src="jsframework/angular-route.min.js"></script>
+        <!-- work-flow scripts -->
+        <script src="javascripts/main.js"></script>
+        <script src="javascripts/controllers/login.js"></script>
+        <script src="javascripts/controllers/main.js"></script>
+    </head>
+    <body >
+        <div>
+            <header>
+                <!-- NAVIGATION -->
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">Shri Bhuvaneshwari PU College, H-Cross(MC109)</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a ui-sref="about">About</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <div class="container">
+                    <ng-view></ng-view>
+                </div>
+            </main>
+
+            <footer>
+                <nav class="navbar navbar-inverse" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#/">Copyright 2015</a>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
